@@ -3,6 +3,7 @@
 
 \usepackage{booktabs}
 \usepackage{xcolor}
+\usepackage{graphicx}
 
 \mode<presentation>
 {
@@ -32,8 +33,10 @@
 
 	\begin{frame}{Uvod}
 		\begin{itemize}
-			\item Tehhnologija analize lica (eng. \textit{FPT}).
-			\item FPT sistemi su zapravo vrlo ranjivi i diskriminišu manjinske grupe.
+			\item Tehnologija analize lica (eng. \textit{FPT}).
+			\bigskip
+			\item FPT sistemi su vrlo ranjivi i diskriminišu manjinske grupe.
+			\bigskip
 			\item Rizik je veći time što kompanije naplaćuju svoje usluge državnim ili privatnim licima.
 		\end{itemize}
 	\end{frame}
@@ -41,6 +44,7 @@
 	\begin{frame}
 		\begin{itemize}
 			\item Algoritamska revizija je vršena kroz pet \textit{etičkih pitanja}.
+			\bigskip
 			\item Etička pitanja su podeljena na preglede dizajna i etičke konflikte.
 		\end{itemize}
 	\end{frame}
@@ -48,7 +52,9 @@
 	\begin{frame}{CelebSET}
 		\begin{itemize}
 			\item Predstavlja podskup IMDB-WIKI skupa podataka.
+			\bigskip
 			\item Sadrži 80 identita poznatih ličnosti podeljenih u 4 grupe.
+			\bigskip
 			\item Prevazilaženje postojećih nedostataka algoritamske revizije.
 		\end{itemize}
 	\end{frame}
@@ -56,6 +62,7 @@
 	\begin{frame}{Metodologija}
 		\begin{itemize}
 			\item Porede se rešenja Microsot-a, Amazon-a i Clarifai-a.
+			\bigskip
 			\item Poređenje se vrši na problemima:
 			\begin{itemize}
 				\item prepoznavanja pola
@@ -109,6 +116,7 @@
 	\begin{frame}{Pregledi dizajna}
 		\begin{itemize}
 			\item Pregled 1: Definisanje opsega delovanja
+			\bigskip
 			\item Pregled 2: Revizija zarad pravičnosti postupka
 		\end{itemize}
 	\end{frame}
@@ -116,21 +124,24 @@
 	\begin{frame}{Etički konflikti}
 		\begin{itemize}
 			\item Konflikt 1: Privanost i zastupljenost
+			\bigskip
 			\item Konflikt 2: Intersekcionalna i grupna jednakost
+			\bigskip
 			\item Konflikt 3: Transparentnost i prekomerna izloženost		
 		\end{itemize}
 	\end{frame}
 
 	\begin{frame}
 		\begin{table}[h!]
-			\centering
-			\caption{\textbf{Udeo etničkih grupa u IMDB-WIKI skupu podataka.}}
-			\begin{tabular}{c|cccccccc} \toprule
-				{} & {Azijati} & {Belci} & {Hispano} & {Crnci} & {Arapi} & {Indijci} & {Ostalo} & {Ukupno} \\ \midrule
-				{IMDB-WIKI} & 7,557 & 338,896 & 351 & 29,613 & 1,160 & 3,299 & 33,468 & 414,344 \\
-				{} & 1.8\% & 81.8\% & 0.1\% & 7.2\% & 0.3\% & 0.8\% & 8.1\% & 100.0\% \\ \bottomrule
-			\end{tabular}
-			\label{table:ethnicity-imdb-wiki}
+			\centering				
+				\caption{\textbf{Udeo etničkih grupa u IMDB-WIKI skupu podataka.}}
+				\resizebox{\linewidth}{!}{%
+				\begin{tabular}{c|cccccccc} \toprule
+					{} & {Azijati} & {Belci} & {Hispano} & {Crnci} & {Arapi} & {Indijci} & {Ostalo} & {Ukupno} \\ \midrule
+					{IMDB-WIKI} & 7,557 & 338,896 & 351 & 29,613 & 1,160 & 3,299 & 33,468 & 414,344 \\
+					{} & 1.8\% & 81.8\% & 0.1\% & 7.2\% & 0.3\% & 0.8\% & 8.1\% & 100.0\% \\ \bottomrule
+				\end{tabular}}
+				\label{table:ethnicity-imdb-wiki}
 		\end{table}
 	\end{frame}
 	
@@ -157,14 +168,17 @@
 	\begin{frame}{Rezultati algoritamske revizije}
 		\begin{itemize}
 			\item CelebSET treba koristiti cilju zastoja ili prekida razvoja, ali ne i kao preduslov za uvođenje moratorijuma.
+			\bigskip
 			\item Uspeh na CelebSET-u ne treba shvatiti kao vrlo nizak prag koji se mora ispoštovati.
 		\end{itemize}
 	\end{frame}
 
 	\begin{frame}{Zaključak}
 		\begin{itemize}
-			\item Tokom kreiranja CelebSET- uočeno je nekoliko etičkih prestupa
+			\item Tokom kreiranja CelebSET- uočeno je nekoliko etičkih prestupa.
+			\bigskip
 			\item Standardizovana je algortamska revizija.
+			\bigskip
 			\item Proces revizije mora imati pažljivo razmotreno pitanje privatnosti.
 		\end{itemize}
 	\end{frame}
